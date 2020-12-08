@@ -30,33 +30,28 @@ int numIslands(char** grid, int gridSize, int* gridColSize) {
 	return result;
 }
 
-
-int main()
+int main() 
 {
-	int result = 0;
-	int gridSize = 0;
-	int gridColSize = 0;
-	char* grid = NULL;
+	int result;
+	
+	char gradCharData[4][5] = {
+		{'1','1','0','0','0'},
+  		{'1','1','0','0','0'},
+  		{'0','0','1','0','0'},
+ 		{'0','0','0','1','1'}
+	};
+	int row = 4;
+	int cloum = 5;
+	
+	char *gradRowPointer[4];
+    for (int i = 0; i < row; i++) {
+		gradRowPointer[i] = &gradCharData[i][0];
+	}
 
-	char charGrid[4][5] = {
-	     { '1', '1', '1', '1', '0' },
-	     { '1', '1', '0', '1', '0' },
-	 	 { '1', '1', '0', '0', '0' },
-	     { '0', '0', '0', '0', '0' }
-	 };
-
-	grid = &charGrid[0][0];
-	gridSize = 4;
-	gridColSize = 5;
-
-
-	result = numIslands(&grid, gridSize, &gridColSize);
-
+	result = numIslands(gradRowPointer, row, &cloum);
+	// result = numIslands(&gradRowPointer[0], row, &cloum);  // 第一个参数也可以写成  &gradRowPointer[0]
 	printf("%d", result);
 
-
-    system("pause");
-    return 0;
+	system("pause");
+	return 0;
 }
-
-
