@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-// 算法超时
+
 /**
+ * 算法超时
  * Note: The returned array must be malloced, assume caller calls free().
  */
 int* maxSlidingWindow(int* nums, int numsSize, int k, int* returnSize) {
