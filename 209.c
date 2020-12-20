@@ -2,9 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-//可以看到滑窗过程
-#define CHANGEFALG 5
-
 
 /**
  * 对数组进行循环，计算每个元素开始，大于S需要的个数
