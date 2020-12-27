@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -65,12 +64,12 @@ int main()
     char *endWord = "cog";
     char *wordList[] = {"hot","dot","dog","lot","log","cog"};
     int wordListSize = 6;
-    char *wordListPointer = (char *)malloc(sizeof(char) * wordListSize);
-    for (int i = 0; i < wordListSize; i++) {
-		wordListPointer[i] = &wordList[i][0];
-	}
+    // char *wordListPointer = (char *)malloc(sizeof(char) * wordListSize);
+    // for (int i = 0; i < wordListSize; i++) {
+	// 	wordListPointer[i] = &wordList[i];
+	// }
 
-	result = ladderLength(beginWord, endWord, &wordListPointer, wordListSize);
+	result = ladderLength(beginWord, endWord, wordList, wordListSize);
 	printf("%d", result);
 
     system("pause");
