@@ -5,11 +5,10 @@
 #include <math.h>
 #include <assert.h>
 #include <uthash.h>
-#include "vos_hash.h"
 
 
 /* 525. 连续数组
- * hash 表
+ * 使用前缀和，空间换时间，hash 表存储前缀和
  */
 
 
