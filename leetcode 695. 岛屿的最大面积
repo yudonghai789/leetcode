@@ -41,7 +41,7 @@
  */
 
 
-
+// ---------------------------解法一 开始-------------------------------------------------
 #define SEARCHFALG 5
 
 void printGrid(int** grid, int gridSize, int* gridColSize)
@@ -81,6 +81,9 @@ int maxAreaOfIsland(int** grid, int gridSize, int* gridColSize)
 	
 	return result;
 }
+// ---------------------------解法结束-------------------------------------------------
+
+
 
 int main() {
 	int gradCharData_1[8][13] = {
